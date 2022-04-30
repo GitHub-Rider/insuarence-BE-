@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Account</title>
+
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/register.js" defer></script>
+</head>
+<body>
+
+    <h1><a href="dashboard.html" title="Go back"><img src="assets/icons/back.svg" width="25" alt="Back to dashboard"></a>Add Account</h1>
+
+    <form id="registration-form">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="reg-no">Vehicle Registration Number</label>
+            <input type="text" placeholder="Enter the vehicle registration number" id="reg-no" required>
+
+            <label for="first-name">First Name</label>
+            <input type="text" placeholder="Enter the first name" id="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="Enter the last name" id="last-name" required>
+
+            <label for="contact-no">Contact No</label>
+            <input type="tel" placeholder="Enter the contact number" id="contact-no" required>
+
+            <label for="nic">NIC</label>
+            <input type="text" placeholder="Enter the NIC number" id="nic" required>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter the email address" id="email" required>
+
+            <label for="address">Address</label>
+            <input type="text" placeholder="Enter the address" id="address" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Policy Information</legend>
+
+            <label for="policy-no">Policy No</label>
+            <input type="text" placeholder="Enter the policy number" id="policy-no" required>
+
+            <label for="insurance-type">Insurance Type</label>
+            <input type="text" placeholder="Enter the insurance type" id="insurance-type" required>
+
+        </fieldset>
+
+        <button type="submit" id="reg">Submit</button>
+
+    </form>
+
+</body>
+</html>

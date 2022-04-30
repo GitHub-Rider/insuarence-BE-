@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaints</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/complaints.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/common.js" defer></script>
+    <script src="assets/js/complaints.js" defer></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1><a href="dashboard.html" title="Go back"><img src="assets/icons/back.svg" width="25" alt="Back to dashboard"></a>Complaints</h1>
+        <table id="tableMain">
+            <tr>
+                <th>Complaint No</th>
+                <th>Registration No</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="modal">
+        <h1>Complaint Details</h1>
+        
+        <details>
+            <summary>User Details</summary>
+            <ul class="details-list">
+                <li>Vehicle Registration No: <span id="user-reg-no"></span></li>
+                <li>Name: <span id="user-name"></span></li>
+                <li>Contact Number: <span id="user-contact"></span></li>
+                <li>NIC: <span id="user-nic"></span></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Third Party Details</summary>
+            <ul class="details-list">
+                <li>Vehicle Registration No: <span id="tp-reg-no"></span></li>
+                <li>Name: <span id="tp-name"></span></li>
+                <li>Contact Number: <span id="tp-contact"></span></li>
+                <li>NIC: <span id="tp-nic"></span></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Accident Details</summary>
+            <ul class="details-list">
+                <li>Date: <span id="accident-date"></span></li>
+                <li>Description: <span id="accident-description"></span></li>
+                <li>Location: <span id="accident-location"></span></li>
+                <li>Recording: <audio controls id="accident-recording"></audio></li>
+                <li>Images: 
+                    <div id="images">
+                        <button id="prev-btn">&#x25C4;</button>
+                        <img id="accident-images">
+                        <button id="next-btn">&#x25BA;</button>
+
+                        
+                        <p><span id="current-image">1</span><span>/</span><span id="image-count"></span></p>
+                    </div>
+                </li>
+            </ul>
+        </details>
+
+        <label>Message: <textarea id="police-message" cols="50" rows="5"></textarea></label>
+        
+        <button id="message-button" class="backBtn">Send Message</button>
+        <button onclick="closeModal()" class="backBtn">Close</button>
+    </div>
+
+</body>
+
+</html>

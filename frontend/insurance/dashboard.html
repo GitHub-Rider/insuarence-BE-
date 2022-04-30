@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <script>
+        if(localStorage.getItem("token") == null) window.location.href = "index.html";
+    </script>
+</head>
+<body>
+
+    <div id="menu">
+
+        <h1 style="text-align: center; width: 100%;">Insurance Dashboard</h1>
+
+        <a href="register.html" class="menu-btn">
+            <img src="assets/icons/add-user.svg" alt="Add Account">
+            <span>Add Account</span>
+        </a>
+
+        <a href="users.html" class="menu-btn">
+            <img src="assets/icons/users.svg" alt="Manage Accounts">
+            <span>Manage Accounts</span>
+        </a>
+
+        <a href="complaints.html" class="menu-btn">
+            <img src="assets/icons/complaints.svg" alt="View Complaints">
+            <span>View Complaints</span>
+        </a>
+
+        <a href="index.html" class="menu-btn">
+            <img src="assets/icons/sign-out.svg" alt="Sign Out">
+            <span>Sign Out</span>
+        </a>
+    </div>
+</body>
+</html>

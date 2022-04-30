@@ -1,0 +1,40 @@
+h1 {
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+button {
+	background-color: #103386;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+	margin: 40px auto;
+	display: block;
+	border-radius: 25px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.container {
+	padding: 16px;
+	width: 30%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+#login-error {
+	display: none;
+	font-weight: bold;
+}

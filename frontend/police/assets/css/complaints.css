@@ -1,0 +1,20 @@
+audio {
+    display: block;
+}
+
+#accident-images {
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#images {
+    margin: auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+label textarea {
+    vertical-align: middle;
+    margin: 25px 0;
+}

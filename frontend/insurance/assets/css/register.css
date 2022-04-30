@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 300px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 25px 50px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100px;
+    margin: auto;
+    display: block;
+    background-color: #103386;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+}
+
+#registration-form {
+    width: 400px;
+    margin: auto;
+}

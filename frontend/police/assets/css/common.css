@@ -1,0 +1,102 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 img {
+    margin-right: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+details[open] {
+	font-weight: 700;
+}
+
+summary {
+	padding: 5px;
+}
+
+summary:hover {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+#container {
+	min-height: 100vh;
+}
+
+#modal {
+	display: none;
+	margin: 100px auto;
+	padding: 40px;
+
+	width: 50%;
+	height: max-content;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+
+.modal-active {
+	filter: blur(20px);
+}
+
+button {
+	background-color: #003618;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.backBtn {
+	margin: 10px auto;
+	display: block;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: center;
+}
+
+.details-list {
+	list-style-type: none;
+	border-radius: 10px;
+}
+
+li {
+	padding: 5px;
+}
+
+.details-list > li {
+	font-weight: bold;
+}
+
+.details-list span {
+	font-weight: 400;
+}
